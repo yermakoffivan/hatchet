@@ -458,6 +458,7 @@ WITH input AS (
 		unnest($10::text[]) AS batch_key,
 		unnest_nd_1d($11::integer[][]) AS concurrency_max_runs
 )
+
 UPDATE
     v1_task
 SET
